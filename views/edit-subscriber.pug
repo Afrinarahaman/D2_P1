@@ -1,0 +1,17 @@
+extends templates/default
+block content 
+    h1 Update
+
+
+    form(action="", method="post")
+        input(type="text", name="id" value=data.id hidden)
+        input(type="text", name="name", placeholder="write a name" value=data.name)
+        br
+        br
+        input(type="text", name="email", placeholder="write email", value=data.email)
+        br
+        br
+        button(type="submit", click="") Save 
+        br
+        br
+        button(type="reset") Cancel

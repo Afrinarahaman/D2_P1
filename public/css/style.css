@@ -1,0 +1,17 @@
+.nav-bar{
+    background-color: blue;
+    display:flex;
+    justify-content: space-evenly;
+}
+.nav-item
+{
+    color: #fff;
+    text-decoration: none;
+}
+h1{
+   background-color: rgb(68, 168, 168); 
+   color: bisque;
+}
+.subs{
+    border: 1px solid #ab3939;
+}

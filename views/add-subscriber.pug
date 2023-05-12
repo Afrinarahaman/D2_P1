@@ -1,0 +1,18 @@
+extends templates/default
+block content 
+    h1 Add
+
+
+    .container
+        form(action="", method="post")
+            input(type="text", name="name", placeholder="write a name")
+            br
+            br
+            input(type="text", name="email", placeholder="write email")
+            br
+            br
+            a(href="/subscriber").btn-small Cancel
+            button(type="submit", style="margin:2px").btn-small Save 
+            br
+            br
+            button(type="reset").btn-small Reset

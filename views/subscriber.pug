@@ -1,0 +1,26 @@
+extends templates/default
+block content 
+    h1 Subscriber
+    a(href="/subscriber/add") Add
+       
+    .container
+        table.subs
+            caption  
+                a(href="/subscriber/add").btn-small Add
+                    i.material-icons.left add 
+            tr 
+                th Name 
+                th Email
+            for element in data 
+                tr 
+                    td= element.name 
+                    td= element.email
+                    td 
+                        a(href="/subscriber/delete/" + element.id) 
+                        i.material-icons delete
+                    td  
+                        a(href="/subscriber/edit/" + element.id) 
+                        i.material-icons edit
+        for item in data 
+            p= `${item.id}  ${item.name} ${item.email}`
+            
